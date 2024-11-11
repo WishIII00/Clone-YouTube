@@ -1,0 +1,55 @@
+#the-cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 16px;
+    padding: 0 24px;
+    padding-bottom: 20px;
+}
+
+.card .-thumb{
+    aspect-ratio: 16/9;
+    border-radius: 12px;
+    margin-bottom: 12px;
+    overflow: hidden;
+}
+
+.card .-channe-img{
+    width: 44px;
+    height: 32px;
+    display: flex;
+    overflow: hidden;
+}
+
+.card .-channe-img img{
+    border-radius: 18rem;
+}
+
+.card .-abot{
+    display: grid;
+    grid-template-columns: 44px auto 48px;
+}
+
+.card .-title{
+    display: inline-block;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    color: rgb(255, 255, 255);
+    margin-bottom:  4px;
+}
+
+.card .-channe{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: rgb(75, 74, 74);
+}
+
+.card .-view{
+    font-size: 0.5 rem;
+    line-height: 1rem;
+    color: rgb(62, 61, 61);
+}

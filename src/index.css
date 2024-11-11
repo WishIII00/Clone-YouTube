@@ -1,0 +1,41 @@
+:root {
+  font-family: "Roboto", "Arial", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: 20px;
+  color-scheme: light dark;
+  color: rgba(241, 241, 241, 0.87);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgba(52, 47, 47, 0.312);
+}
+
+a{
+  text-decoration: none;
+  color: aliceblue;
+}
+
+#main-layout{
+  width: 100vw;
+  height: 100vw;
+  display: grid;
+  grid-template:
+    "n n" 56px
+    "s c" / 240px;
+}
+
+#nav{
+  grid-area: n;
+}
+
+#sidebar{
+  grid-area: s;
+}
+
+#content{
+  grid-area: c;
+}

@@ -1,0 +1,33 @@
+#content #tags{
+    display: flex;
+    align-items: center;
+    height: 56px;
+    padding:  0 24px;
+    gap: 18px;
+    width: 100%;
+    position: sticky;
+    top:0;
+    z-index: 10;
+    margin-bottom: 24px;
+    background-color: rgb(38, 39, 39);
+}
+
+#content #tags .-item{
+    display: flex;
+    height: 32px;
+    padding: 0 12px;
+    background-color:rgb(68, 68, 67);
+    color: rgb(246, 242, 242);
+    align-items: center;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+#content #tags .-item:hover{
+    background-color: rgb(245, 245, 245);
+}
+
+#content #tags .-item.-active{
+    background-color: rgb(234, 231, 231);
+    color: black
+}
