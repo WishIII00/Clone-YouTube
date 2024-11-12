@@ -1,27 +1,35 @@
+#content{
+    box-sizing: border-box; /* ป้องกันการขยายเกิน */
+}
+
 #the-cards{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 16px;
-    padding: 0 24px;
-    padding-bottom: 20px;
+    gap: 20px;
+    padding: 0 30px;
+    padding-bottom: 10px;
+    box-sizing: border-box; /* ป้องกันการขยายเกิน */
 }
 
 .card .-thumb{
     aspect-ratio: 16/9;
-    border-radius: 12px;
+    border-radius: 20px;
     margin-bottom: 12px;
     overflow: hidden;
 }
 
-.card .-channe-img{
-    width: 44px;
-    height: 32px;
-    display: flex;
-    overflow: hidden;
+.card .-chanel-img {
+    width: 36px; /* ขนาดสี่เหลี่ยมจัตุรัส */
+    height: 36px;
+    overflow: hidden; /* ซ่อนส่วนที่เกิน */
+    border-radius: 50%; /* ให้ div เป็นวงกลม */
 }
 
-.card .-channe-img img{
-    border-radius: 18rem;
+.card .-chanel-img img {
+    width: 100%; /* ให้ภาพเต็ม container */
+    height: 100%; /* ให้ภาพเต็ม container */
+    object-fit: cover; /* ทำให้รูปเต็มพื้นที่และคงสัดส่วน */
+    border-radius: 50%; /* ให้ภาพเป็นวงกลม */
 }
 
 .card .-abot{
@@ -37,19 +45,19 @@
     -webkit-box-orient: vertical;
     font-size: 1rem;
     font-weight: 500;
-    line-height: 1.5rem;
+    line-height: 1rem;
     color: rgb(255, 255, 255);
-    margin-bottom:  4px;
+    margin-bottom: 1px;
 }
 
 .card .-channe{
     font-size: 1rem;
     line-height: 1.5rem;
-    color: rgb(75, 74, 74);
+    color: rgb(162, 158, 158);
 }
 
 .card .-view{
-    font-size: 0.5 rem;
+    font-size: 14px;
     line-height: 1rem;
-    color: rgb(62, 61, 61);
+    color: rgb(162, 158, 158);
 }

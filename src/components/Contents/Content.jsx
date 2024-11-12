@@ -1,4 +1,3 @@
-import React from 'react'
 import Tags from '../Tags/Tags'
 import './ContentsStyle.css'
 
@@ -9,121 +8,121 @@ function Content() {
       <section id = "the-cards">
         <div className="card">
           <div className="-thumb">
-            <img src="https://via.placeholder.com/380x230" alt="" />
+            <img src="https://i.ytimg.com/vi/1v6Emp-lw5U/hq720.jpg?sqp=-oaymwE7CK4FEIIDSFryq4qpAy0IARUAAAAAGAElAADIQj0AgKJD8AEB-AH-CYAC0AWKAgwIABABGD4gYShyMA8=&rs=AOn4CLBQD1mBiITDh_Ox9JY65WfrSLTu3g" alt="" />
           </div>
           <div className="-abot">
               <div className="-chanel-img">
-                 <img src="https://via.placeholder.com/36x36" alt="" />
+                 <img src="data:image/jpeg;base64,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" alt="" />
               </div>
               <div className="-detail">
-                <div className="-title">ชื่อคลิป</div>
-                <div className="-channe">ชื่อช่อง</div>
-                <div className="-view">การดู</div>
+                <div className="-title">drowning in loneliness</div>
+                <div className="-channe">drift</div>
+                <div className="-view">การดู 769 ครั้ง • 16 ชั่วโมงที่ผ่านมา</div>
               </div>
           </div>
         </div>
         <div className="card">
           <div className="-thumb">
-            <img src="https://via.placeholder.com/380x230" alt="" />
+            <img src="https://i.ytimg.com/vi/Iqu3GbGW2sc/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARh_IEsoLDAP&rs=AOn4CLChoQ-elYbE6lQ38MV8G81E1gPeXw" alt="" />
           </div>
           <div className="-abot">
               <div className="-chanel-img">
-                 <img src="https://via.placeholder.com/36x36" alt="" />
+                 <img src="data:image/jpeg;base64,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" alt="" />
               </div>
               <div className="-detail">
-                <div className="-title">ชื่อคลิป</div>
-                <div className="-channe">ชื่อช่อง</div>
-                <div className="-view">การดู</div>
+                <div className="-title">introverted me when Im home alone.</div>
+                <div className="-channe">grace.</div>
+                <div className="-view">การดู 1.8 แสน ครั้ง • 3 สัปดาหืที่เเล้ว</div>
               </div>
           </div>
         </div>
         <div className="card">
           <div className="-thumb">
-            <img src="https://via.placeholder.com/380x230" alt="" />
+            <img src="https://i.ytimg.com/vi/gspdXesevFc/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBMCtENGXsxbneV64GDe0aKKf-jpg" alt="" />
           </div>
           <div className="-abot">
               <div className="-chanel-img">
-                 <img src="https://via.placeholder.com/36x36" alt="" />
+                  <img src="data:image/png;base64,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" alt="" />
               </div>
               <div className="-detail">
-                <div className="-title">ชื่อคลิป</div>
-                <div className="-channe">ชื่อช่อง</div>
-                <div className="-view">การดู</div>
+                <div className="-title">Can I Dive ?</div>
+                <div className="-channe">mmlm</div>
+                <div className="-view">การดู 1.2 แสน ครั้ง • 3 เดือนที่ผ่านมา</div>
               </div>
           </div>
         </div>
         <div className="card">
           <div className="-thumb">
-            <img src="https://via.placeholder.com/380x230" alt="" />
+            <img src="https://i.ytimg.com/vi/2DGlKNp6XYM/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBAyNfZekki9AFw6YSAY-g5GFJu0g" alt="" />
           </div>
           <div className="-abot">
               <div className="-chanel-img">
-                 <img src="https://via.placeholder.com/36x36" alt="" />
+                 <img src="data:image/jpeg;base64,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" alt="" />
               </div>
               <div className="-detail">
-                <div className="-title">ชื่อคลิป</div>
-                <div className="-channe">ชื่อช่อง</div>
-                <div className="-view">การดู</div>
+                <div className="-title">Your dream is right in front of you. Keep it up!</div>
+                <div className="-channe">grace.</div>
+                <div className="-view">การดู 1 แสน ครั้ง • 1 เดือนที่ผ่านมา</div>
               </div>
           </div>
         </div>
         <div className="card">
           <div className="-thumb">
-            <img src="https://via.placeholder.com/380x230" alt="" />
+            <img src="https://i.ytimg.com/vi/ggp_nVdbWzY/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhAIFUoZTAP&rs=AOn4CLAaLTtqDCEx7GvgWCoZ_5YX1mHKkg" alt="" />
           </div>
           <div className="-abot">
               <div className="-chanel-img">
-                 <img src="https://via.placeholder.com/36x36" alt="" />
+                 <img src="https://yt3.googleusercontent.com/V0Jvy7UNYanKNHf6qI0p8QhUBNp4DIfJlH5qm4AdsxggEwKB0RvRa6UC3DrFaDtx_fgiEEunQmY=s160-c-k-c0x00ffffff-no-rj" alt="" />
               </div>
               <div className="-detail">
-                <div className="-title">ชื่อคลิป</div>
-                <div className="-channe">ชื่อช่อง</div>
-                <div className="-view">การดู</div>
+                <div className="-title">soft bossa for cheerful times</div>
+                <div className="-channe">keep it cosy</div>
+                <div className="-view">การดู 8.6 พัน ครั้ง • 5 วันที่ผ่านมา</div>
               </div>
           </div>
         </div>
         <div className="card">
           <div className="-thumb">
-            <img src="https://via.placeholder.com/380x230" alt="" />
+            <img src="https://i.ytimg.com/vi/n8P0s94UEtY/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBiT8TML6ZLTPwk9M3NrAKYuFysOw" alt="" />
           </div>
           <div className="-abot">
               <div className="-chanel-img">
-                 <img src="https://via.placeholder.com/36x36" alt="" />
+                 <img src="data:image/png;base64,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" alt="" />
               </div>
               <div className="-detail">
-                <div className="-title">ชื่อคลิป</div>
-                <div className="-channe">ชื่อช่อง</div>
-                <div className="-view">การดู</div>
+                <div className="-title">Nap Time | A Playlist</div>
+                <div className="-channe">the afterhours</div>
+                <div className="-view">การดู 5.2 พัน ครั้ง • 4 วันที่ผ่านมา</div>
+              </div>
+          </div>
+        </div>
+        <div className="card">
+        <div className="-thumb">
+            <img src="https://i.ytimg.com/vi/0ewnvZ2Jgh4/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLClIuxuddpstG-TInqv1o1gXK3-_w" alt="" />
+          </div>
+          <div className="-abot">
+              <div className="-chanel-img">
+                 <img src="data:image/png;base64,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" alt="" />
+              </div>
+              <div className="-detail">
+                <div className="-title">Coffee & Milk | A Playlist</div>
+                <div className="-channe">the afterhours</div>
+                <div className="-view">การดู 1.4 แสน ครั้ง • 9 วันที่ผ่านมา</div>
               </div>
           </div>
         </div>
         <div className="card">
           <div className="-thumb">
-            <img src="https://via.placeholder.com/380x230" alt="" />
+            <img src="https://i.ytimg.com/vi/BvMyIUsoQ_0/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhlIFAoTzAP&rs=AOn4CLCHHNTvCfzCYgnpqDVBlea31M4myA" alt="" />
           </div>
           <div className="-abot">
               <div className="-chanel-img">
-                 <img src="https://via.placeholder.com/36x36" alt="" />
+              <img src="https://yt3.googleusercontent.com/V0Jvy7UNYanKNHf6qI0p8QhUBNp4DIfJlH5qm4AdsxggEwKB0RvRa6UC3DrFaDtx_fgiEEunQmY=s160-c-k-c0x00ffffff-no-rj" alt="" />
               </div>
               <div className="-detail">
-                <div className="-title">ชื่อคลิป</div>
-                <div className="-channe">ชื่อช่อง</div>
-                <div className="-view">การดู</div>
-              </div>
-          </div>
-        </div>
-        <div className="card">
-          <div className="-thumb">
-            <img src="https://via.placeholder.com/380x230" alt="" />
-          </div>
-          <div className="-abot">
-              <div className="-chanel-img">
-                 <img src="https://via.placeholder.com/36x36" alt="" />
-              </div>
-              <div className="-detail">
-                <div className="-title">ชื่อคลิป</div>
-                <div className="-channe">ชื่อช่อง</div>
-                <div className="-view">การดู</div>
+                <div className="-title">finding joy in the little things</div>
+                <div className="-channe">keep it cosy</div>
+                <div className="-view">การดู 1.4 หมื่น ครั้ง • 2 วันที่ผ่านมา</div>
               </div>
           </div>
         </div>

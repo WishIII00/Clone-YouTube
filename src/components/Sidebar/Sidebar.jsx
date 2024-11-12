@@ -28,6 +28,7 @@ function Sidebar() {
             </div>
             <div className="-text">YouTube Music</div>
             </a>
+            <br/>
             <a href="#!" className="-item" >
           <div className="-icon">
             <img src="https://via.placeholder.com/24x24" alt="" />

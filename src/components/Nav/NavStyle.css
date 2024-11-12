@@ -1,7 +1,13 @@
-#nav{
+#nav {
     display: flex;
+    position: sticky;
     justify-content: space-between;
+    align-items: center; /* จัดให้อยู่ตรงกลางแนวตั้ง */
+    width: 100%; /* กำหนดให้มีความกว้างเต็มหน้าจอ */
+    padding: 0 16px; /* เพิ่ม padding ซ้ายขวา */
+    box-sizing: border-box; /* ป้องกันการขยายเกิน */
 }
+
 
 #nav .-brand{
     display: grid;
@@ -13,8 +19,25 @@
 #nav .-brand img{
     width: 100px;
     height: 30px;
-    
-    
+
+}
+
+.-logo {
+    display: flex; /* ใช้ flexbox */
+    align-items: center; /* จัดให้อยู่กลางแนวตั้ง */
+  }
+
+#nav .-brand .-logo img{
+    width: 34px;
+    height: 22px;
+
+}
+
+.-logo span {
+    display: inline-block;
+    vertical-align: middle; /* จัดให้อยู่กลางแนวตั้ง */
+    font-size: 22px; /* ปรับขนาดข้อความ */
+    line-height: 1; /* ปรับความสูงของบรรทัดให้เหมาะสม */
 }
 
 #nav .-ham{
@@ -23,12 +46,12 @@
     border-radius: 100%;
     display: flex;
     cursor: pointer;
-    background-color: rgb(124, 15, 226);
+    background-color: rgb(12, 12, 12);
     
 }
 
 #nav .-ham:hover{
-    background-color: azure;
+    background-color: rgb(46, 48, 48);
 }
 
 #nav .-ham img{
@@ -53,15 +76,25 @@
     grid-template-columns: 1fr 1fr 1fr;
     justify-content: center;
     align-items: center;
+    padding: 5px;
 }
 
-#nav .-search-input{
+#nav .-search-input {
     height: 100%;
     width: 100%;
     padding: 0;
-    border: none;
+    border: 2px solid transparent; /* กำหนดกรอบเบื้องต้นเป็นโปร่งใส */
     padding-left: 2rem;
+    color: #f8f4f4;
+    transition: border-color 0.3s ease; /* เพิ่มการเปลี่ยนสีกรอบอย่างนุ่มนวล */
 }
+
+#nav .-search-input:focus {
+    border: 1px solid rgb(59, 74, 239); /* กรอบสีแดงเมื่อเลือก input */
+    outline: none; /* ลบเส้นขอบที่มาตรฐานจากเบราว์เซอร์ */
+}
+
+
 
 #nav .-search{
     width: 100%;
@@ -70,14 +103,15 @@
     grid-template-columns: auto 64px;
     justify-content: end;
     align-items: center;
+    color: #f8f8f8;
 }
 
 #nav .-voice{
     width: 40px;
     height: 40px;
-    background-color: blanchedalmond;
+    background-color: rgb(50, 49, 49);
     border-radius:  40px;
-    border: 1px solid rgb(38, 203, 82);
+    border: 1px solid rgb(27, 27, 27);
 }
 
 #nav .-btn{
@@ -86,9 +120,9 @@
     display: grid;
     justify-content: center;
     align-content: center;
-    background-color: blue;
+    background-color: rgb(53, 53, 55);
     border-radius: 0 40px 40px 0;
-    border: 1px solid rgb(28, 230, 159);
+    border: 1px solid rgb(32, 32, 32);
     border-left: 0;
     cursor: pointer;
 } 
@@ -98,7 +132,7 @@
     grid-template-columns: auto;
     align-items: center;
     height: 100%;
-    border: 1px solid #ccc;
+    border: 1px solid #393737;
     border-radius: 40px 0 0 40px;
     overflow: hidden;
 
@@ -106,19 +140,22 @@
 
 #nav .-search-input :focus-visible{
     outline: none;
+    
 }
 
 #nav .-end-item{
     width: 40px;
     height: 40px;
-    background-color: antiquewhite;
+    background-color: rgb(99, 42, 244);
     border-radius: 10rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 10px;
+    
 }
 
 #nav .-end-item:hover{
-    background-color: beige;
+    background-color: rgb(37, 37, 38);
     cursor: pointer;
 }

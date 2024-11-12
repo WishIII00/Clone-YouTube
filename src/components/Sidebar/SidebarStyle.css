@@ -2,6 +2,7 @@
     height: 100vh; /* กำหนดความสูงเต็มหน้าจอ */
     overflow: auto;
     padding: 15px;
+    box-sizing: border-box; /* ป้องกันการขยายเกิน */
 }
 
 
@@ -9,14 +10,16 @@
     display: grid;
     grid-auto-rows: 40px;
     align-items: center;
+    border-bottom: 1px solid wheat;
 }
+
 .-side-par .-item{
     display: grid;
     grid-template-columns: 40px auto;
     align-items: center;
     height: 100%;
     background-color: rgb(82, 83, 85);
-    padding: 10 100px;
+    padding: 10 56px;
     border-radius: 5px;
 }   
 

@@ -9,14 +9,15 @@
     top:0;
     z-index: 10;
     margin-bottom: 24px;
-    background-color: rgb(38, 39, 39);
+    background-color: rgb(29, 27, 27);
+    
 }
 
 #content #tags .-item{
     display: flex;
     height: 32px;
     padding: 0 12px;
-    background-color:rgb(68, 68, 67);
+    background-color:rgb(55, 55, 52);
     color: rgb(246, 242, 242);
     align-items: center;
     border-radius: 10px;
@@ -24,7 +25,7 @@
 }
 
 #content #tags .-item:hover{
-    background-color: rgb(245, 245, 245);
+    background-color: rgb(79, 77, 77);
 }
 
 #content #tags .-item.-active{

@@ -1,5 +1,5 @@
-import React from 'react'
 import './NavStyle.css'
+
 
 function Nav() {
   return (
@@ -9,7 +9,8 @@ function Nav() {
           <img src="https://via.placeholder.com/24x24" alt="" />
         </div>
         <div className="-logo">
-          <img src="https://via.placeholder.com/97x20" alt="" />
+           <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/2560px-YouTube_full-color_icon_%282017%29.svg.png" alt="" />
+           <span>Premium</span>
         </div>
       </div>
       <div className="-center">
@@ -27,6 +28,7 @@ function Nav() {
         <div className="-end-item">3</div>
       </div>
     </section>
+    
   )
 }
 
