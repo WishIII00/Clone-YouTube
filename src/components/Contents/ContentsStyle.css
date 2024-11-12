@@ -1,17 +1,38 @@
-#content{
+#content {
     box-sizing: border-box; /* ป้องกันการขยายเกิน */
 }
 
-#the-cards{
+#the-cards {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr); /* เริ่มต้นที่ 4 คอลัมน์ */
     gap: 20px;
     padding: 0 30px;
     padding-bottom: 10px;
     box-sizing: border-box; /* ป้องกันการขยายเกิน */
 }
 
-.card .-thumb{
+/* ปรับคอลัมน์เป็น 3 คอลัมน์เมื่อหน้าจอเล็กลง */
+@media (max-width: 1200px) {
+    #the-cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* ปรับคอลัมน์เป็น 2 คอลัมน์เมื่อหน้าจอเล็กลงอีก */
+@media (max-width: 768px) {
+    #the-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* ปรับคอลัมน์เป็น 1 คอลัมน์เมื่อหน้าจอเล็กสุด */
+@media (max-width: 480px) {
+    #the-cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+.card .-thumb {
     aspect-ratio: 16/9;
     border-radius: 20px;
     margin-bottom: 12px;
@@ -32,12 +53,12 @@
     border-radius: 50%; /* ให้ภาพเป็นวงกลม */
 }
 
-.card .-abot{
+.card .-abot {
     display: grid;
     grid-template-columns: 44px auto 48px;
 }
 
-.card .-title{
+.card .-title {
     display: inline-block;
     text-overflow: ellipsis;
     -webkit-line-clamp: 2;
@@ -50,14 +71,16 @@
     margin-bottom: 1px;
 }
 
-.card .-channe{
-    font-size: 1rem;
+.card .-channe {
+    font-size: 17px;
     line-height: 1.5rem;
     color: rgb(162, 158, 158);
+    margin-top: -12px; /* ปรับค่านี้ตามต้องการเพื่อขยับขึ้น */
 }
 
-.card .-view{
+.card .-view {
     font-size: 14px;
     line-height: 1rem;
     color: rgb(162, 158, 158);
+    margin-top: -8px; /* ปรับค่านี้ตามต้องการเพื่อขยับขึ้น */
 }
